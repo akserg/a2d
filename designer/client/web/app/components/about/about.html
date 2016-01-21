@@ -1,0 +1,19 @@
+<p>
+    For reward, here is a list of awesome computer scientists!
+</p>
+
+<p>
+    You want more? Add them yourself!
+</p>
+
+<form (submit)="addName()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Name" [(ngModel)]="newName">
+    </div>
+    <button type="submit" class="btn btn-default">Add</button>
+</form>
+<br>
+<ul class="list-group">
+    <li *ngFor="#name of list.get()" class="list-group-item">{{name}}</li>
+</ul>
