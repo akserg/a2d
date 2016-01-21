@@ -3,19 +3,7 @@ export class NavList {
       'Home',
       'About',
       'Dream',
-
-
-
-
-
-
-
-
-'James',
-
-
 //<%ROUTES%>
-      'Pages'
     ];
 
   get(): string[] {
